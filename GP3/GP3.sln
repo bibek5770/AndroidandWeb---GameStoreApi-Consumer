@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GP3", "GP3.shproj", "{F28A2632-6505-4DE8-99C3-F46358399510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GP3.Droid", "Droid\GP3.Droid.csproj", "{078B6D3B-ADCD-4E8E-99D7-867556129BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GP3.UITests", "UITests\GP3.UITests.csproj", "{B27DCA67-E75B-46EB-8541-7AE615D0D65D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{078B6D3B-ADCD-4E8E-99D7-867556129BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078B6D3B-ADCD-4E8E-99D7-867556129BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078B6D3B-ADCD-4E8E-99D7-867556129BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078B6D3B-ADCD-4E8E-99D7-867556129BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B27DCA67-E75B-46EB-8541-7AE615D0D65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27DCA67-E75B-46EB-8541-7AE615D0D65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27DCA67-E75B-46EB-8541-7AE615D0D65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27DCA67-E75B-46EB-8541-7AE615D0D65D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
