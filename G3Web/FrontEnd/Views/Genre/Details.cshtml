@@ -1,0 +1,28 @@
+﻿@model GamesTore.Models.GetGenreDTO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+       
+        <dt>
+            @Html.ActionLink("Genre Name", "Index")
+
+
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { URL = Model.URL }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<FrontEnd.Models.DTO.GetCartDTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.CheckoutReady)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Games)
+
+
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckoutReady)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User_Id)
+        </td>
+        <td>
+            @foreach (var game in item.Games)
+            {
+            @Html.ActionLink(game.Item1.GameName, "Details", "Games", new { URL = item.URL }, new { @class = "text-danger" })<br/>
+                
+            //@Html.ActionLink(modelItem => game.Item1.GameName)
+
+            }
+        </td>
+        <td>
+            @Html.ActionLink("CreateSale", "Create", "Sale", new { URL = item.URL }, new { @class = "text-info" })|
+            @Html.ActionLink("Details", "Details", new { URL=item.URL })
+        </td>
+    </tr>
+}
+
+</table>

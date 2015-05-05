@@ -1,0 +1,91 @@
+﻿@model FrontEnd.Models.ViewModels.GamePutViewModel
+
+@{
+    ViewBag.Title = "EditGame";
+}
+
+<h2>EditGame</h2>
+
+
+@using (Html.BeginForm())
+{
+
+    <div class="form-horizontal">
+        @using (Html.BeginForm("EditGame", "Games", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.GameName, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.GameName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.GameName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ReleaseDate, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.ReleaseDate, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ReleaseDate, "", new { @class = "text-danger" })
+
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.InventoryStock, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.InventoryStock, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.InventoryStock, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.GameGenres, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.ListBoxFor(m => m.Genres, Model.GameGenres, new { size = 5 })
+                    @*m => m.SelectGameGenres,*@
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.GameTags, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.ListBoxFor(m => m.Tags, Model.GameTags, new { size = 5 })
+                    @*m => m.SelectGameGenres,*@
+            </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Genres, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.ListBoxFor(m => m.SelectGameGenres, Model.Genres, new { size = 5 })
+                    @Html.ValidationMessageFor(model => model.Genres, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tags, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.ListBoxFor(m => m.SelectGameTags, Model.Tags, new { size = 5 })
+                    @Html.ValidationMessageFor(model => model.Tags, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <button type="submit" id="approve-btn" class="btn btn-success">
+                        Edit
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+
+}
+

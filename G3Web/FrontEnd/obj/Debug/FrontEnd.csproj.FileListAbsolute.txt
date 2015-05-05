@@ -1,0 +1,129 @@
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\FrontEnd.dll.config
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\FrontEnd.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\FrontEnd.pdb
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\EntityFramework.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\RestSharp.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Net.Http.Formatting.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Helpers.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Http.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Http.WebHost.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Mvc.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Optimization.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Razor.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.WebPages.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.WebPages.Razor.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\WebGrease.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\EntityFramework.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\RestSharp.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Net.Http.Formatting.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Http.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Http.WebHost.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Helpers.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Mvc.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Optimization.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.Razor.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.WebPages.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\System.Web.WebPages.Razor.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Users\Bibek\Downloads\selucmps383-sp15-p3-g7-389003653d4d\selucmps383-sp15-p3-g7-389003653d4d\GamesTore\FrontEnd\obj\Debug\FrontEnd.csprojResolveAssemblyReference.cache
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\FrontEnd.dll.config
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\FrontEnd.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\FrontEnd.pdb
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\EntityFramework.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\RestSharp.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Net.Http.Formatting.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Helpers.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Http.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Http.WebHost.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Mvc.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Optimization.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Razor.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.WebPages.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.WebPages.Razor.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\WebGrease.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\EntityFramework.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\RestSharp.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Net.Http.Formatting.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Http.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Http.WebHost.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Helpers.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Mvc.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Optimization.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.Razor.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.WebPages.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\System.Web.WebPages.Razor.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\obj\Debug\FrontEnd.csprojResolveAssemblyReference.cache
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Users\Bibek\Desktop\envoc final api\GamesTore\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\obj\Debug\FrontEnd.csprojResolveAssemblyReference.cache
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\FrontEnd.dll.config
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\FrontEnd.dll
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\FrontEnd.pdb
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\RestSharp.dll
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\System.Net.Http.Formatting.dll
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\System.Web.Http.dll
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\System.Web.Http.WebHost.dll
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\System.Web.Mvc.dll
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\WebGrease.dll
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\RestSharp.xml
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\System.Net.Http.Formatting.xml
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\System.Web.Http.xml
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\System.Web.Http.WebHost.xml
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Users\Bibek\Desktop\brijesh\original\Original\WebPortalG6\FrontEnd\obj\Debug\FrontEnd.pdb
+B:\finalApi383\WebPortalG6\FrontEnd\bin\FrontEnd.dll.config
+B:\finalApi383\WebPortalG6\FrontEnd\bin\FrontEnd.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\FrontEnd.pdb
+B:\finalApi383\WebPortalG6\FrontEnd\bin\Antlr3.Runtime.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\EntityFramework.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\Newtonsoft.Json.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\RestSharp.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Net.Http.Formatting.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Helpers.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Http.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Http.WebHost.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Mvc.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Optimization.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Razor.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.WebPages.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.WebPages.Razor.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\WebGrease.dll
+B:\finalApi383\WebPortalG6\FrontEnd\bin\EntityFramework.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\Newtonsoft.Json.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\RestSharp.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Net.Http.Formatting.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Http.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Http.WebHost.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Helpers.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Mvc.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Optimization.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.Razor.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.WebPages.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\System.Web.WebPages.Razor.xml
+B:\finalApi383\WebPortalG6\FrontEnd\bin\Antlr3.Runtime.pdb
+B:\finalApi383\WebPortalG6\FrontEnd\obj\Debug\FrontEnd.dll
+B:\finalApi383\WebPortalG6\FrontEnd\obj\Debug\FrontEnd.pdb
+B:\finalApi383\WebPortalG6\FrontEnd\obj\Debug\FrontEnd.csprojResolveAssemblyReference.cache

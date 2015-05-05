@@ -1,0 +1,77 @@
+﻿@model GamesTore.Models.GetGameDTO
+
+@{
+    ViewBag.Title = "GetGames";
+}
+
+<h2>GetGames</h2>
+
+<table class=table>
+    <tr>
+        <th>
+            @Html.ActionLink("Name", "GetGames")
+        </th>
+        <th class="cap-name">
+            @Html.ActionLink("Genre", "GetGames")
+        </th>
+        <th>
+            @Html.ActionLink("Date", "GetGames")
+        </th>
+        <th>
+            @Html.ActionLink("Tags", "GetGames")
+        </th>
+        <th>
+            @Html.ActionLink("Quantity", "GetGames")
+        </th>
+       
+        <th>
+            @Html.ActionLink("Price", "Index")
+        </th>
+        <th>
+            @Html.ActionLink("Actions", "GetGames")
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.GameName)
+        </td>
+        <td class="cap-name">
+
+
+            @foreach (var genre in Model.Genres)
+            {
+                @Html.DisplayFor(model => genre.Name  )<br/>
+            }
+
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </td>
+       
+        <td>
+            @foreach (var tag in Model.Tags)
+            {
+                @Html.DisplayFor(model => tag.Name)
+
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.InventoryStock)
+        </td>
+
+        <td>
+            @Html.DisplayFor(model => model.Price)
+        </td>
+       @if (User.IsInRole("Admin"))
+        {
+
+        <td>
+
+            @Html.ActionLink("Edit", "EditGame", new { URL = Model.URL })
+            @Html.ActionLink("Delete", "DeleteGame", new { URL = Model.URL })
+        </td>
+        }
+    </tr>
+
+</table>

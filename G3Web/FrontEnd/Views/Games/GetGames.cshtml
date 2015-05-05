@@ -1,0 +1,67 @@
+﻿@model IEnumerable<GamesTore.Models.GetGameDTO>
+
+@{
+    ViewBag.Title = "GetGames";
+}
+
+<h2>GetGames</h2>
+
+<table class="table" id="myTable">
+    <tr>
+        <th>
+            @Html.ActionLink("Name of Game", "GetGames")
+        </th>
+        <th class="cap-name">
+            @Html.ActionLink("Current Genre ", "GetGames")
+        </th>
+        <th>
+            @Html.ActionLink(" Current Tags", "GetGames")
+        </th>
+        <th>
+            @Html.ActionLink("Release Date", "GetGames")
+        </th>
+
+        <th>
+            @Html.ActionLink("Quantity", "GetGames")
+        </th>
+
+        <th>
+            @Html.ActionLink("Price", "Index")
+        </th>
+        <th>
+            @Html.ActionLink("Action", "GetGames")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GameName)
+            </td>
+            <td class="cap-name">
+                @Html.ListBox("Id", new MultiSelectList(item.Genres, "URL", "Name"))
+            </td>
+            <td>
+                @Html.ListBox("Id", new MultiSelectList(item.Tags, "URL", "Name"))
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.InventoryStock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            @if (User.IsInRole("Admin"))
+            {
+                <td>
+                    @Html.ActionLink("Edit", "EditGame", new { URL = item.URL })
+                    @Html.ActionLink("Delete", "DeleteGame", new { URL = item.URL })
+                </td>
+            }
+        </tr>
+    }
+</table>

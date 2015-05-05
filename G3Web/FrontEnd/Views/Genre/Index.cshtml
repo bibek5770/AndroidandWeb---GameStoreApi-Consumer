@@ -1,0 +1,34 @@
+﻿@model IEnumerable<GamesTore.Models.GetGenreDTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<table class="table" id="myTable">
+    <tr>
+        
+        <th>
+            @Html.ActionLink("Genre Name", "Index")       
+         </th>
+        <th>
+        @Html.ActionLink("Action", "Index")
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { URL = item.URL }) |
+            @Html.ActionLink("Details", "Details", new { URL = item.URL }) |
+            @Html.ActionLink("Delete", "Delete", new { URL = item.URL })
+        </td>
+    </tr>
+}
+
+</table>
