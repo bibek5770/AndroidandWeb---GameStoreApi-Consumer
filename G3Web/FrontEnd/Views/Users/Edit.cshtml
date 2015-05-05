@@ -25,7 +25,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.LastName)
+                @Html.EditorFor(model => model.LastName, new { @class = "sr-only" })
                 @Html.ValidationMessageFor(model => model.LastName)
             </div>
         </div>
@@ -37,15 +37,16 @@
                 @Html.ValidationMessageFor(model => model.Email)
             </div>
         </div>
-
+        <br /><br /><br />
         <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+            <div >
+                <button class="btn btn-danger" onclick="location.href='@Url.Action("Index", "Users")';return false;">Back To List</button>
+
+                <input type="submit" value="Update User" class="btn btn-info " />
+
             </div>
         </div>
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+

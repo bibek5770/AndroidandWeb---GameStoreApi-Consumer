@@ -126,11 +126,15 @@ namespace FrontEnd.Controllers
                     FormsAuthentication.SetAuthCookie(userData, false);
                     if (role.Equals("Admin"))
                     {
-                        return RedirectToAction("Index");
+                        TempData["Title"] = "GaME 3 PoRtAl";
+                        TempData["msg"] = "Welcome Admin";
+                        return RedirectToAction("Index","Account");
                     }
                     else if (role.Equals("Employee"))
                     {
-                        return RedirectToAction("Index");
+                        TempData["Title"] = "Welcome";
+                        TempData["msg"] = "GaME 3 PoRtAl";
+                        return RedirectToAction("Index","Account");
                     }
 
                     Console.WriteLine("whoops!!sth wrong");

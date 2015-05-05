@@ -3,32 +3,57 @@
 @{
     ViewBag.Title = "Index";
 }
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
+
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
+<body>
+<div class="container">
+    <br/>
+    <table id="GenreTable" class="display">
+        <thead>
+        <tr>
+
+            <th>
+                @Html.ActionLink("Genre Name", "Index")
+            </th>
+            <th>
+                @Html.ActionLink("Action", "Index")
+            </th>
+        </tr>
+            </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        <button class="btn btn-success" onclick="location.href='@Url.Action("Edit", "Genre", new { URL = item.URL })';return false;">Edit</button>
+                        <button class="btn btn-info" onclick="location.href='@Url.Action("Details", "Genre", new { URL = item.URL })';return false;">Details</button>
+                        <button class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "Genre", new { URL = item.URL })';return false;">Delete</button>
+
+                        @*@Html.ActionLink("Edit", "Edit", new { URL = item.URL }) |
+                        @Html.ActionLink("Details", "Details", new { URL = item.URL }) |
+                        @Html.ActionLink("Delete", "Delete", new { URL = item.URL })*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
 
 
-
-<table class="table" id="myTable">
-    <tr>
-        
-        <th>
-            @Html.ActionLink("Genre Name", "Index")       
-         </th>
-        <th>
-        @Html.ActionLink("Action", "Index")
-        </th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-       
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { URL = item.URL }) |
-            @Html.ActionLink("Details", "Details", new { URL = item.URL }) |
-            @Html.ActionLink("Delete", "Delete", new { URL = item.URL })
-        </td>
-    </tr>
-}
-
-</table>
+    <script>
+        $(document).ready(function () {
+            $('#GenreTable').DataTable();
+        });
+    </script>
+    </div>
+</body>

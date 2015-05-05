@@ -3,9 +3,28 @@
     ViewBag.Title = "LogIn";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@if (TempData["msg"] != null)
-{ 
-<h2>
-   @TempData["Title"]<br/>
-    @TempData["msg"]
-    </h2>}
+<style html, body, iframe { height 100%; }></style>
+@*@Video.Flash(path: "Media/sample.swf",
+                 width: "400",
+                 height: "600",
+                 play: true,
+                 loop: true,
+                 menu: false,
+                 bgColor: "red",
+                 quality: "medium",
+                 scale: "exactfit",
+                 windowMode: "transparent")*@
+<center>
+<iframe src="https://www.youtube.com/embed/hvoD7ehZPcM" width="1200" height="500"></iframe>
+
+<iframe src="https://www.youtube.com/embed/wgYNjpGGMKU?autoplay=1&start=60" width="1200" height="500"></iframe>
+
+<iframe src="http://www.youtube.com/embed/GccGbdLqTmQ?autoplay=1&start=3&end=4" width="600" height="300"></iframe>
+<iframe src="https://www.youtube.com/embed/tyymbxa3MC0?start=1014&end=1016" width="600" height="300"></iframe>
+<iframe src="https://www.youtube.com/embed/5vweae5BBFo?autoplay=1&start=0&end=1" width="1200" height="500"></iframe>
+
+<iframe src="https://www.youtube.com/embed/ybKWJsOKmBg" width="600" height="300"></iframe>
+<iframe src="https://www.youtube.com/embed/9t3KqDGjpGQ?autplay=1&start=47&end=60"
+width="600" height="300"></iframe>
+    </center>
+

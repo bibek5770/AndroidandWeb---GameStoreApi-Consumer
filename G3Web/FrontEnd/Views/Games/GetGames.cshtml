@@ -3,10 +3,18 @@
 @{
     ViewBag.Title = "GetGames";
 }
+<br/>
+<br/>
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
 
-<h2>GetGames</h2>
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 
+<!-- DataTables -->
+<div class="container">
 <table class="table" id="myTable">
+    <thead>
     <tr>
         <th>
             @Html.ActionLink("Name of Game", "GetGames")
@@ -28,16 +36,23 @@
         <th>
             @Html.ActionLink("Price", "Index")
         </th>
+@if (User.IsInRole("Admin"))
+        {
         <th>
-            @Html.ActionLink("Action", "GetGames")
+            @Html.ActionLink("Actions", "GetGames")
         </th>
+}
     </tr>
-
+        </thead>
+    <tbody>
     @foreach (var item in Model)
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.GameName)
+                
+                    @Html.DisplayFor(modelItem => item.GameName)
+                        
+
             </td>
             <td class="cap-name">
                 @Html.ListBox("Id", new MultiSelectList(item.Genres, "URL", "Name"))
@@ -58,10 +73,22 @@
             @if (User.IsInRole("Admin"))
             {
                 <td>
-                    @Html.ActionLink("Edit", "EditGame", new { URL = item.URL })
-                    @Html.ActionLink("Delete", "DeleteGame", new { URL = item.URL })
+                    <button class="btn btn-info" onclick="location.href='@Url.Action("Details", "Games", new { URL = item.URL })';return false;">Details</button>
+                    <button class="btn btn-success" onclick="location.href='@Url.Action("EditGame", "Games", new { URL = item.URL })';return false;">Edit Game</button>
+                    <button class="btn btn-danger" onclick="location.href='@Url.Action("DeleteGame", "Games", new { URL = item.URL })';return false;">Delete Game</button>
+
+                    @*@Html.ActionLink("Detail", "Details", new { URL = item.URL }) |
+                    @Html.ActionLink("Edit", "EditGame", new { URL = item.URL }) |
+                    @Html.ActionLink("Delete", "DeleteGame", new { URL = item.URL })*@
                 </td>
             }
         </tr>
     }
+        </tbody>
 </table>
+    </div>
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>

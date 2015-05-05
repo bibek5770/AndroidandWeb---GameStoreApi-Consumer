@@ -43,9 +43,12 @@ namespace FrontEnd.Controllers
                                 });
                             }
                         }
-                        TempData["Title"] = "Get All Sales";
-                        TempData["msg"] = "Request Successfull";
-                        return View(returnSales);
+                        if (TempData["msg"] == null)
+                        {
+                            TempData["Title"] = "Get All Sales";
+                            TempData["msg"] = "Request Successfull";
+                        }
+                        return View(returnSales.OrderByDescending(m=>m.SalesDate));
                     }
                     else
                     {
@@ -56,10 +59,11 @@ namespace FrontEnd.Controllers
                 }
                 else if (HttpContext.User.IsInRole("Employee"))
                 {
-                    var request = CreateRequest("Api/Sales", Method.GET);
-                    string UserId = GetUserId();
+                     string UserId = GetUserId();
+                    var request = CreateRequest("Api/Sales"+"?empId="+UserId, Method.GET);
+                   
                     request.AddUrlSegment("empId", UserId);
-                    request.AddUrlSegment("userid", UserId);
+                  //request.AddUrlSegment("userid", UserId);
 
                     var result = await Client.ExecuteTaskAsync(request);
                     if (result.StatusCode == HttpStatusCode.OK)
@@ -81,7 +85,7 @@ namespace FrontEnd.Controllers
                                 });
                             }
                         }
-                        return View(returnSales);
+                        return View(returnSales.OrderByDescending(m => m.SalesDate));
                     }
                     else
                     {
@@ -98,7 +102,7 @@ namespace FrontEnd.Controllers
             catch
             {
                 TempData["Title"] = "Get Sale";
-                TempData["msg"] = "Internal Error";
+                TempData["msg"] = "Not Found";
                 return RedirectToAction("Index", "Account");
             }
         }

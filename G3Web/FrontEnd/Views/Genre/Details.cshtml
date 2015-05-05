@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Details";
 }
-
+<div class="container">
 <h2>Details</h2>
 
 <div>
@@ -23,6 +23,10 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { URL = Model.URL }) |
-    @Html.ActionLink("Back to List", "Index")
+    <button class="btn btn-info" onclick="location.href='@Url.Action("Edit", "Genre", new { URL = Model.URL })';return false;">Edit Genre</button>
+    <button class="btn btn-success" onclick="location.href='@Url.Action("index", "Genre")';return false;">Back To List</button>
+
+    @*@Html.ActionLink("Edit", "Edit", new { URL = Model.URL }) |
+    @Html.ActionLink("Back to List", "Index")*@
 </p>
+</div>

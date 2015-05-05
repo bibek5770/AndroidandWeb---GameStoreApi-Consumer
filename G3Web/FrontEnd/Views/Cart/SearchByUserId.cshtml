@@ -5,7 +5,7 @@
 }
 
 
-
+<div class="container">
 <table class="table">
     <tr>
         
@@ -42,10 +42,13 @@
             }
         </td>
         <td>
-            @Html.ActionLink("CreateSale", "Create", "Sale", new { URL = Model.URL }, new { @class = "text-info" })
+            <button class="btn btn-success" onclick="location.href='@Url.Action("Create", "Sale", new { URL = Model.URL })';return false;">Checkout Cart</button>
+
+            @*@Html.ActionLink("CreateSale", "Create", "Sale", new { URL = Model.URL }, new { @class = "text-info" })*@
             
         </td>
     </tr>
     }
 
 </table>
+</div>

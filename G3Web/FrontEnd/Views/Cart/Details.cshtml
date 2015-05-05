@@ -1,5 +1,6 @@
 ﻿@model FrontEnd.Models.DTO.GetCartDTO
-       <table class="table">
+       <div class="container">
+           <table class="table">
    <tr>
        <th>
            @Html.DisplayNameFor(model => model.Games)
@@ -32,9 +33,12 @@
             
             
             <td>
-                @Html.ActionLink("CreateSale", "Create", "Sales", new { URL = Model.URL }, new { @class = "text-info" })
+                <button class="btn btn-success" onclick="location.href='@Url.Action("Create", "Sale", new { URL = Model.URL })';return false;">Checkout Cart</button>
+
+                @*@Html.ActionLink("CreateSale", "Create", "Sales", new { URL = Model.URL }, new { @class = "text-info" })*@
             </td>
         </tr>
     }
 
 </table>
+</div>

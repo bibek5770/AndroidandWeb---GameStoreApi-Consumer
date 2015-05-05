@@ -3,9 +3,20 @@
 @{
     ViewBag.Title = "Index";
 }
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
 
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 
-<table class="table">
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
+<br/>
+<br/>
+<div class="container">
+    
+<table id="saleTable" class="table">
+    <thead>
     <tr>
        
         <th>
@@ -22,27 +33,36 @@
         </th>
         <th></th>
     </tr>
+        </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
 
-@foreach (var item in Model) {
-    <tr>
-       
-        <td>
-            @Html.DisplayFor(modelItem => item.SalesDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Total)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.user)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EmployeeId)
-        </td>
-        <td>
-            @Html.ActionLink("ViewCart", "Details", "Cart", new { URL = item.URL }, new { @class = "text-info" }) 
-            
-        </td>
-    </tr>
-}
+                <td>
+                    @Html.DisplayFor(modelItem => item.SalesDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Total)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.user)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmployeeId)
+                </td>
+                <td>
+                    <button class="btn btn-info" onclick="location.href='@Url.Action("Details", "Cart", new { URL = item.URL })';return false;">View Cart</button>
 
+                    @*@Html.ActionLink("ViewCart", "Details", "Cart", new { URL = item.URL }, new { @class = "text-info" })*@
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
+    </div>
+<script>
+    $(document).ready(function () {
+        $('#saleTable').DataTable();
+    });
+</script>

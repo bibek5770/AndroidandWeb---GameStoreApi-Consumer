@@ -4,9 +4,9 @@
     ViewBag.Title = "EditGame";
 }
 
-<h2>EditGame</h2>
 
-
+<div class="container">
+    <h2>EditGame</h2>
 @using (Html.BeginForm())
 {
 
@@ -77,15 +77,17 @@
                     @Html.ValidationMessageFor(model => model.Tags, "", new { @class = "text-danger" })
                 </div>
             </div>
+            <br/>
             <div class="row">
-                <div class="col-md-4 col-md-offset-4">
+                <div >
                     <button type="submit" id="approve-btn" class="btn btn-success">
-                        Edit
+                        Update Game
                     </button>
                 </div>
             </div>
         }
     </div>
-
+    
 }
+    </div>
 

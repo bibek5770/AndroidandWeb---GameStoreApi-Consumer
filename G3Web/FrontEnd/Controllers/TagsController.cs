@@ -23,8 +23,11 @@ namespace FrontEnd.Controllers
                 if (result.StatusCode == HttpStatusCode.OK)
                 {
                     var deserializedTags = JsonConvert.DeserializeObject<List<GetTagDTO>>(result.Content);
-                    TempData["Title"] = "Get All Tags";
-                    TempData["msg"] = "Request Successfull";
+                    if (TempData["msg"] == null)
+                    {
+                        TempData["Title"] = "Get All Tags";
+                        TempData["msg"] = "Request Successfull";
+                    }
                     return View(deserializedTags);
 
                 }

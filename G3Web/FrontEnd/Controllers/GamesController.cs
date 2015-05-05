@@ -27,8 +27,11 @@ namespace FrontEnd.Controllers
                 if (result.StatusCode == HttpStatusCode.OK)
                 {
                     var deserializedGames = JsonConvert.DeserializeObject<List<GetGameDTO>>(result.Content);
-                    TempData["Title"] = "Get Games";
-                    TempData["msg"] = "Request Successful";
+                    if (TempData["msg"] == null)
+                    {
+                        TempData["Title"] = "Get Games";
+                        TempData["msg"] = "Request Successful";
+                    }
                     return View(deserializedGames);
                 }
                 else
@@ -45,7 +48,7 @@ namespace FrontEnd.Controllers
             {
                 if (!String.IsNullOrEmpty(URL))
                 {
-                    URL = URL.Substring(39);
+                    URL = URL.Substring(49);
                     var gamesRequest = CreateRequest("API/Games/{URL}", Method.GET);
                     gamesRequest.AddParameter("Id", Int16.Parse(URL));
                     var result = await Client.ExecuteTaskAsync(gamesRequest);
@@ -265,14 +268,14 @@ namespace FrontEnd.Controllers
                 {
                     TempData["Title"] = "Edit Game";
                     TempData["msg"] = "Bad Request";
-                    return RedirectToAction("Index");
+                    return RedirectToAction("GetGames");
                 }
             }
             catch
             {
                 TempData["Title"] = "Edit Game";
                 TempData["msg"] = "Internal Error!!Please Try Again";
-                return RedirectToAction("Index");
+                return RedirectToAction("GetGames");
             }
         }
 
@@ -379,14 +382,14 @@ namespace FrontEnd.Controllers
                 {
                     TempData["Title"] = "Delete User";
                     TempData["msg"] = "Error!!Invalid Request";
-                    return RedirectToAction("Index");
+                    return RedirectToAction("GetGames");
                 }
             }
             catch
             {
                 TempData["Title"] = "Delete User";
                 TempData["msg"] = "Error!!Invalid Request";
-                return RedirectToAction("Index");
+                return RedirectToAction("GetGames");
             }
         }
 
@@ -407,7 +410,7 @@ namespace FrontEnd.Controllers
                 {
                     TempData["Title"] = "Search User ";
                     TempData["msg"] = " User Not Found Found";
-                    return RedirectToAction("Index");
+                    return RedirectToAction("GetGames");
 
                 }
             }

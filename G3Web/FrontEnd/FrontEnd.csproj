@@ -176,6 +176,9 @@
     <Content Include="Content\custom\style.css" />
     <Content Include="Content\custom\table-responsive.css" />
     <Content Include="Content\Fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\images.jpg" />
+    <Content Include="Content\jquery.datetimepicker.css" />
+    <Content Include="Content\nartuto.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -228,6 +231,7 @@
     <Content Include="Scripts\Custom\zabuto_calendar.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery.datetimepicker.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />

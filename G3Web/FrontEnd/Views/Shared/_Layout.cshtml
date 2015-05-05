@@ -6,7 +6,7 @@
         <!-- Bootstrap core CSS -->
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link rel="http://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css"> 
+    <link rel="https://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css"> 
 </head>
 
 <body>
@@ -23,151 +23,14 @@
         <!--header start-->
         <header class="header black-bg">
             <div class="sidebar-toggle-box">
-                <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+                <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation" style="color:white"> </div>
             </div>
             <!--logo start-->
             <a href="~/account/index" class="logo"><b>WEB PORTAL G3</b></a>
             <!--logo end-->
-            <div class="nav notify-row" id="top_menu">
-                <!--  notification start -->
-                @*<ul class="nav top-menu">
-                    <!-- settings start -->
-                    <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
-                            <i class="fa fa-tasks"></i>
-                            <span class="badge bg-theme">4</span>
-                        </a>
-                        <ul class="dropdown-menu extended tasks-bar">
-                            <div class="notify-arrow notify-arrow-green"></div>
-                            <li>
-                                <p class="green">You have 4 pending tasks</p>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="task-info">
-                                        <div class="desc">DashGum Admin Panel</div>
-                                        <div class="percent">40%</div>
-                                    </div>
-                                    <div class="progress progress-striped">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                            <span class="sr-only">40% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="task-info">
-                                        <div class="desc">Database Update</div>
-                                        <div class="percent">60%</div>
-                                    </div>
-                                    <div class="progress progress-striped">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                            <span class="sr-only">60% Complete (warning)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="task-info">
-                                        <div class="desc">Product Development</div>
-                                        <div class="percent">80%</div>
-                                    </div>
-                                    <div class="progress progress-striped">
-                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                            <span class="sr-only">80% Complete</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="task-info">
-                                        <div class="desc">Payments Sent</div>
-                                        <div class="percent">70%</div>
-                                    </div>
-                                    <div class="progress progress-striped">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                            <span class="sr-only">70% Complete (Important)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="external">
-                                <a href="#">See All Tasks</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- settings end -->
-                    <!-- inbox dropdown start-->
-                    <li id="header_inbox_bar" class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
-                            <i class="fa fa-envelope-o"></i>
-                            <span class="badge bg-theme">5</span>
-                        </a>
-                        <ul class="dropdown-menu extended inbox">
-                            <div class="notify-arrow notify-arrow-green"></div>
-                            <li>
-                                <p class="green">You have 5 new messages</p>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="photo"></span>
-                                    <span class="subject">
-                                        <span class="from">Zac Snider</span>
-                                        <span class="time">Just now</span>
-                                    </span>
-                                    <span class="message">
-                                        Hi mate, how is everything?
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="photo"></span>
-                                    <span class="subject">
-                                        <span class="from">Divya Manian</span>
-                                        <span class="time">40 mins.</span>
-                                    </span>
-                                    <span class="message">
-                                        Hi, I need your help with this.
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="photo"></span>
-                                    <span class="subject">
-                                        <span class="from">Dan Rogers</span>
-                                        <span class="time">2 hrs.</span>
-                                    </span>
-                                    <span class="message">
-                                        Love your new Dashboard.
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="photo"></span>
-                                    <span class="subject">
-                                        <span class="from">Dj Sherman</span>
-                                        <span class="time">4 hrs.</span>
-                                    </span>
-                                    <span class="message">
-                                        Please, answer asap.
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">See all messages</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- inbox dropdown end -->
-                </ul>*@
-                <!--  notification end -->
-            </div>
+            <div class="nav notify-row" id="top_menu">              
+                    
+                </div>
             <div class="top-menu">
                 <ul class="nav pull-right top-menu">
                     <li><a class="logout" href="~/account/login">Logout</a></li>
@@ -182,109 +45,129 @@
         <aside>
             <div id="sidebar" class="nav-collapse ">
                 <!-- sidebar menu start-->
+                
                 <ul class="sidebar-menu" id="nav-accordion">
+                    
+                        <p class="centered"><a href="profile.html"></a></p>
+                        @if (User.IsInRole("Admin"))
+                        {
 
-                    <p class="centered"><a href="profile.html"></a></p>
-                    @if (User.IsInRole("Admin")) { 
-
-                    <h5 class="centered">Welcome Admin</h5>
-                    }
-                    @if (User.IsInRole("Employee")) { 
-
-                        <h5 class="centered">Welcome Employee</h5>
-                        
+                            <h5 class="centered"><i class="fa fa-dashboard"></i>  Admin DashBoard</h5>
                         }
-                    <li class="mt">
-                        <a class="active" href="~/account/index">
-                            <i class="fa fa-dashboard"></i>
-                            <span>Dashboard</span>
-                        </a>
+                        @if (User.IsInRole("Employee"))
+                        {
+
+                            <h5 class="centered"><i class="fa fa-dashboard"></i>  Employee DashBoard</h5>
+
+                        }
+                        <li class="mt">
+                            <div class="alert alert-Success alertfade">
+                                <a class="active" href="~/account/index">
+                                    
+                                        @*<strong class="bg-primary">Notification</strong>*@
+                                        
+                                    
+                                    <span>
+                                        @if (@TempData["msg"] != null)
+                                        {
+                                            <div class="alert alert-info alertfade">
+                                                <center>
+                                                    <strong>@TempData["Title"]</strong><br />
+                                                    @TempData["msg"]
+                                                </center>
+                                            </div>
+                                        }
+                                </span>
+                            </a>
+                        </div>
                     </li>
                     <li class="sub-menu">
                         <a href="javascript:;">
-                            <i class=" fa fa-bar-chart-o"></i>
-                            <span>Search Cart</span>
+                            <i class=" fa fa-search"></i>
+                            <span>Search User Cart</span>
                         </a>
                         <ul class="sub">
-                           
-                            <input class="form-control" id="searchemployee" placeholder="Search by User ID"/>
+
+                            <input class="form-control" id="searchemployee" placeholder="Enter the User's ID" />
                         </ul>
                     </li>
                     @if (User.IsInRole("Admin"))
                     {
-                    <li class="sub-menu">
-                        <a href="javascript:;">
-                            <i class=" fa fa-bar-chart-o"></i>
-                            <span>Users</span>
-                        </a>
-                        <ul class="sub">
-                            <li><a href="~/users/index">List ALl Users</a></li>
-                            <li><a href="~/users/create">Create User</a></li>
-                        </ul>
-                    </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class=" fa fa-user"></i>
+                                <span>Users</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="~/users/index"><i class="fa fa-list"></i>List ALl Users</a></li>
+                                <li><a href="~/users/create"><i class="fa fa-magic"></i>Create User</a></li>
+                            </ul>
+                        </li>
                     }
                     <li class="sub-menu">
                         <a href="~/games/getgames">
-                            <i class="fa fa-desktop"></i>
+                            <i class="fa fa-gamepad"></i>
                             <span>Games</span>
                         </a>
                         <ul class="sub">
-                            <li><a href="~/games/getgames">List ALl Games</a></li>
+                            <li><a href="~/games/getgames"><i class="fa fa-list"></i>List ALl Games</a></li>
                             @if (User.IsInRole("Admin"))
                             {
-                            <li><a href="~/games/createGame">Create Game</a></li>
+                                <li><a href="~/games/createGame"><i class="fa fa-magic"></i>Create Game</a></li>
                             }
                         </ul>
                     </li>
-@if (User.IsInRole("Admin")) { 
+                    @if (User.IsInRole("Admin"))
+                    {
 
-                    <li class="sub-menu">
-                        <a href="~/genre/index">
-                            <i class="fa fa-cogs"></i>
-                            <span>Genres</span>
-                        </a>
-                        <ul class="sub">
-                            <li><a href="~/genre/index">List ALl Genre</a></li>
-                            {
-                            <li><a href="/genre/create">Create New Genre</a></li>
+                        <li class="sub-menu">
+                            <a href="~/genre/index">
+                                <i class="fa fa-cogs"></i>
+                                <span>Genres</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="~/genre/index"><i class="fa fa-list"></i>List ALl Genre</a></li>
+                                
+                                <li><a href="/genre/create"><i class="fa fa-magic"></i>Create New Genre</a></li>
 
-                        </ul>
-                    </li>
+                            </ul>
+                        </li>
 
-                    <li class="sub-menu">
-                        <a href="~/tags/index">
-                            <i class="fa fa-cogs"></i>
-                            <span>Tags</span>
-                        </a>
-                        <ul class="sub">
-                            <li><a href="~/tags/index">List ALl Tags</a></li>
-                            
-                            <li><a href="/tags/create">Create New Tags</a></li>
-                            
-                        </ul>
-                    </li>
-                            
-                    <li class="sub-menu">
-                        <a href="~/cart/index">
-                            <i class="fa fa-tasks"></i>
-                            <span>Cart</span>
-                        </a>
-                        <ul class="sub">
-                            <li><a href="~/cart/index">List All Carts</a></li>
-                        </ul>
-                    </li>
-}
+                        <li class="sub-menu">
+                            <a href="~/tags/index">
+                                <i class="fa fa-cogs"></i>
+                                <span>Tags</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="~/tags/index"><i class="fa fa-list"></i>List All Tags</a></li>
+
+                                <li><a href="/tags/create"><i class="fa fa-magic"></i>Create New Tags</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="~/cart/index">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>Cart</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="~/cart/index"><i class="fa fa-list"></i>List All Carts</a></li>
+                            </ul>
+                        </li>
+                    }
                     <li class="sub-menu">
                         <a href="~/sale/index">
-                            <i class="fa fa-th"></i>
+                            <i class="fa fa-credit-card"></i>
                             <span>Sales</span>
                         </a>
                         <ul class="sub">
-                            <li><a href="~/sale/index">List All Sales</a></li>
+                           <li>
+                            <a href="~/sale/index"> <i class="fa fa-list"></i>List All Sales</a></li>
                         </ul>
                     </li>
-                    
-                </ul>
+
+</ul>
                 <!-- sidebar menu end-->
             </div>
         </aside>
@@ -295,7 +178,7 @@
         <!--main content start-->
         <section id="main-content">
             <section class="wrapper">
-                @if (@TempData["msg"] != null)
+                @*@if (@TempData["msg"] != null)
                 {
                     <div class="alert alert-success alertfade">
                         <center>
@@ -303,7 +186,7 @@
                             @TempData["msg"]
                         </center>
                     </div>
-                }
+                }*@
                 @RenderBody()
 
         </section>
@@ -338,27 +221,26 @@
     <script src="~/Scripts/Custom/gritter-conf.js"></script>
     <script src="~/Scripts/Custom/sparkline-chart.js"></script>
     <script src="~/Scripts/Custom/zabuto_calendar.js"></script>
-    <script src="~/Scripts/Custom/dataTables.js"></script>
-    <script src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+    @*<script src="~/Scripts/Custom/dataTables.js"></script>*@
+    <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/jquery.datetimepicker.js"></script>
+
 
     <script type="text/javascript">
         $(document).ready(function () {
-        var unique_id = $.gritter.add({
-            // (string | mandatory) the heading of the notification
-            title: 'Welcome to Dashgum!',
-            // (string | mandatory) the text inside the notification
-            //text: 'Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo. Free version for <a href="http://blacktie.co" target="_blank" style="color:#ffd777">BlackTie.co</a>.',
-            // (string | optional) the image to display on the left
-            image: 'assets/img/ui-sam.jpg',
-            // (bool | optional) if you want it to fade out on its own or just sit there
-            sticky: true,
-            // (int | optional) the time you want it to be alive for before fading out
-            time: '',
-            // (string | optional) the class name you want to apply to that specific message
-            class_name: 'my-sticky-class'
-        });
+            $('#add-gritter-light').click(function () {
+                $.gritter.add({
+                    // (string | mandatory) the heading of the notification
+                    title: 'This is a light notification',
+                    // (string | mandatory) the text inside the notification
+                    text: 'Just add a "gritter-light" class_name to your $.gritter.add or globally to $.gritter.options.class_name',
+                    class_name: 'gritter-light'
+                });
 
-        return false;
+                return false;
+            });
+
+
         });
 </script>
 
@@ -396,7 +278,7 @@
             }
         });
 
-        $('.alertfade').fadeIn('fast').delay(2000).fadeOut();
+        $('.alertfade').fadeIn('fast').delay(3000).fadeOut();
 
     });
 
@@ -407,9 +289,7 @@
         var to = $("#" + id).data("to");
         console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
     }
-    $(document).ready(function () {
-        $('#myTable').DataTable();
-    });
+   
 </script>
 
 

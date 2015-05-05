@@ -24,8 +24,11 @@ namespace FrontEnd.Controllers
                 {
                     if (result.StatusCode == HttpStatusCode.OK)
                     {
-                        TempData["Title"] = "Get All Users";
-                        TempData["msg"] = "Request Successfull";
+                        if (TempData["msg"] == null)
+                        {
+                            TempData["Title"] = "Get All Users";
+                            TempData["msg"] = "Request Successfull";
+                        }
                         var response = JsonConvert.DeserializeObject<List<GetUserDTO>>(result.Content);
                         return View(response);
                     }

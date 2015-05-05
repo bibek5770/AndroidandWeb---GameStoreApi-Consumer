@@ -3,10 +3,19 @@
 @{
     ViewBag.Title = "Index";
 }
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
 
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
 
-<table class="table">
+<br /><br />
+<div class="body-content">
+<table id="userTable"class="table">
+    <thead>
     <tr>
        
         <th>
@@ -22,7 +31,8 @@
 @Html.ActionLink("Actions", "Index")
         </th>
     </tr>
-
+        </thead>
+    <tbody>
 @foreach (var item in Model) {
     <tr>
         
@@ -38,12 +48,22 @@
 @if (User.IsInRole("Admin"))
         {
         <td>
-            @Html.ActionLink("Edit", "Edit", new { URL = item.URL }) |
+            <button class="btn btn-success" onclick="location.href='@Url.Action("Edit", "Users", new { URL = item.URL })';return false;">Edit</button>
+            <button class="btn btn-info" onclick="location.href='@Url.Action("Details", "Users", new { URL = item.URL })';return false;">Detail</button>
+            <button class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "Users", new { URL = item.URL })';return false;">Delete</button>
+
+            @*@Html.ActionLink("Edit", "Edit", new { URL = item.URL },new{@class="logout"}) |
             @Html.ActionLink("Details", "Details", new { URL = item.URL }) |
-            @Html.ActionLink("Delete", "Delete", new { URL = item.URL })
+            @Html.ActionLink("Delete", "Delete", new { URL = item.URL })*@
         </td>
 }
     </tr>
 }
-
+        </tbody>
 </table>
+    </div>
+<script>
+        $(document).ready(function () {
+            $('#userTable').DataTable();
+        });
+</script>

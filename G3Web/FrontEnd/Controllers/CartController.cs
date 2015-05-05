@@ -30,8 +30,11 @@ namespace FrontEnd.Controllers
                 if (result.StatusCode == HttpStatusCode.OK)
                 {
                     var response = JsonConvert.DeserializeObject<List<GetCartDTO>>(result.Content.ToString());
-                    TempData["Title"] = "Get All Carts";
-                    TempData["msg"] = "Request Successfull";
+                    if (TempData["msg"] == null)
+                    {
+                        TempData["Title"] = "Get All Carts";
+                        TempData["msg"] = "Request Successfull";
+                    }
                     return View(response);
 
                 }

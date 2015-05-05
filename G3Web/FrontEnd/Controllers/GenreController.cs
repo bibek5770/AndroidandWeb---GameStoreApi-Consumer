@@ -22,8 +22,11 @@ namespace FrontEnd.Controllers
                 if (result.StatusCode == HttpStatusCode.OK)
                 {
                     var deserializedTags = JsonConvert.DeserializeObject<List<GetGenreDTO>>(result.Content);
-                    TempData["Title"] = "Get All Genre";
-                    TempData["msg"] = "Request Successfull";
+                    if (TempData["msg"] == null)
+                    {
+                        TempData["Title"] = "Get All Genre";
+                        TempData["msg"] = "Request Successfull";
+                    }
                     return View(deserializedTags);
                 }
                 else
@@ -135,18 +138,36 @@ namespace FrontEnd.Controllers
         // GET: Users/Edit/5
         public async Task<ActionResult> Edit(string URL)
         {
-            if (!HttpContext.User.IsInRole("Admin"))
+            try
             {
-                TempData["Title"] = "Log In ";
-                TempData["msg"] = "Please log in as appopriate User";
-                return RedirectToAction("Login", "Account");
+                if (!String.IsNullOrEmpty(URL))
+                {
+                    if (!HttpContext.User.IsInRole("Admin"))
+                    {
+                        TempData["Title"] = "Log In ";
+                        TempData["msg"] = "Please log in as appopriate User";
+                        return RedirectToAction("Login", "Account");
+                    }
+                    string newUrl = URL.Substring(39);
+                    var request = CreateRequest(newUrl, Method.GET);
+                    var result = await Client.ExecuteTaskAsync(request);
+                    {
+                        var respose = JsonConvert.DeserializeObject<GetGenreDTO>(result.Content);
+                        return View(respose);
+                    }
+                }
+                else
+                {
+                    TempData["Title"] = "Edit Genre";
+                    TempData["msg"] = "Error!!Request  Not Valid";
+                    return RedirectToAction("Index");
+                }
             }
-            string newUrl = URL.Substring(39);
-            var request = CreateRequest(newUrl, Method.GET);
-            var result = await Client.ExecuteTaskAsync(request);
+            catch
             {
-                var respose = JsonConvert.DeserializeObject<GetGenreDTO>(result.Content);
-                return View(respose);
+                TempData["Title"] = "Edit Genre";
+                TempData["msg"] = "Error!!Please try again.";
+                return RedirectToAction("Index");
             }
         }
 
